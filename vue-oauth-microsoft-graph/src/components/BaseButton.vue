@@ -14,11 +14,6 @@ export default {
             default: () => "primary"
         }
     },
-    methods: {
-        handleClick() {
-            console.log("Hello World");
-        },
-    },
 };
 </script>
 
@@ -45,5 +40,11 @@ export default {
 
     .buttondanger:hover {
         background-color: #ef5350;
+    }
+
+    .common{
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
     }
 </style>
