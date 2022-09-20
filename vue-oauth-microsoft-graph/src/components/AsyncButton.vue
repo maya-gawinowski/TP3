@@ -44,10 +44,11 @@ export default {
     handleClick () {
       console.log(this.myDelay)
       const myPromise =  new Promise((resolveInner) => {
-        setTimeout(resolveInner, 2000);
+        setTimeout(resolveInner, this.myDelay);
       });
       this.isPending=true;      
       myPromise.finally(() => { this.isPending = false })
+      this.myDelay+=1000;
     }
   }
 }
